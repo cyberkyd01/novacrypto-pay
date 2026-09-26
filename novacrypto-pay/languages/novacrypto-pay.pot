@@ -1,0 +1,1573 @@
+# NovaCrypto Pay translation template
+msgid ""
+msgstr ""
+"Project-Id-Version: NovaCrypto Pay 1.0.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Domain: novacrypto-pay\n"
+
+msgid "\"Pay with MetaMask\" and \"Open in wallet app\" (BIP-21 / EIP-681 / Solana Pay / BOLT11 deep links)."
+msgstr ""
+
+msgid "%d conf"
+msgstr ""
+
+msgid "%d valid address"
+msgstr ""
+
+msgid "%s address is invalid (checksum or format check failed)."
+msgstr ""
+
+msgid "%s%% crypto discount applied"
+msgstr ""
+
+msgid "(late)"
+msgstr ""
+
+msgid "(not provided)"
+msgstr ""
+
+msgid "<strong>NovaCrypto Pay:</strong> no coins are enabled yet. Add at least one wallet address under <a href=\"%s\">Settings → Coins &amp; Wallets</a>."
+msgstr ""
+
+msgid "API key"
+msgstr ""
+
+msgid "Accent (success) colour"
+msgstr ""
+
+msgid "Accept Bitcoin, Ethereum, Lightning, stablecoins and more directly to your own wallets. Configure coins under NovaCrypto Pay → Settings."
+msgstr ""
+
+msgid "Accept anyway and mark paid"
+msgstr ""
+
+msgid "Accept underpayment → paid"
+msgstr ""
+
+msgid "Accepted coins"
+msgstr ""
+
+msgid "Actions"
+msgstr ""
+
+msgid "Add URL"
+msgstr ""
+
+msgid "Add a free Etherscan API key for EVM detection (optional)"
+msgstr ""
+
+msgid "Add any EVM-compatible chain (Fantom, Cronos, zkSync, Linea, your own L2…). A native coin entry appears above after saving."
+msgstr ""
+
+msgid "Add note"
+msgstr ""
+
+msgid "Add row"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Address is empty."
+msgstr ""
+
+msgid "Admin notes"
+msgstr ""
+
+msgid "Admin notification email"
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "All coins"
+msgstr ""
+
+msgid "All payments"
+msgstr ""
+
+msgid "All sources"
+msgstr ""
+
+msgid "Allow tx hash submission"
+msgstr ""
+
+msgid "Already paid? Submit your transaction hash"
+msgstr ""
+
+msgid "Amount"
+msgstr ""
+
+msgid "Amount due"
+msgstr ""
+
+msgid "Amount outside the Lightning address limits."
+msgstr ""
+
+msgid "Amount to send"
+msgstr ""
+
+msgid "Amount too small for Lightning."
+msgstr ""
+
+msgid "Any status"
+msgstr ""
+
+msgid "Appearance"
+msgstr ""
+
+msgid "Applied to payment boxes. Override templates by copying templates/*.php to yourtheme/novacrypto-pay/."
+msgstr ""
+
+msgid "Ask for an email on links, donations and shortcodes for receipts."
+msgstr ""
+
+msgid "Auto (follow visitor OS dark mode)"
+msgstr ""
+
+msgid "Auto (from key prefix)"
+msgstr ""
+
+msgid "Awaiting cryptocurrency payment."
+msgstr ""
+
+msgid "Awaiting payment"
+msgstr ""
+
+msgid "Backend"
+msgstr ""
+
+msgid "Base URL"
+msgstr ""
+
+msgid "Binance (USD/USDT pairs)"
+msgstr ""
+
+msgid "Bitcoin-style (UTXO)"
+msgstr ""
+
+msgid "Blank = unlimited"
+msgstr ""
+
+msgid "BlockCypher token (optional)"
+msgstr ""
+
+msgid "Blockchain check complete."
+msgstr ""
+
+msgid "Blockscout URL (optional)"
+msgstr ""
+
+msgid "Border radius (px)"
+msgstr ""
+
+msgid "Browser poll interval (seconds)"
+msgstr ""
+
+msgid "By coin (30d)"
+msgstr ""
+
+msgid "Cache rates for (seconds)"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Cancel the WooCommerce order when the payment window expires with no funds received"
+msgstr ""
+
+msgid "Cancel this payment?"
+msgstr ""
+
+msgid "Cancel unpaid orders"
+msgstr ""
+
+msgid "Cancelled"
+msgstr ""
+
+msgid "Cancelled: crypto payment expired."
+msgstr ""
+
+msgid "Chain ID"
+msgstr ""
+
+msgid "Change branch:"
+msgstr ""
+
+msgid "Chat alerts"
+msgstr ""
+
+msgid "Check blockchain now"
+msgstr ""
+
+msgid "Child key derivation failed."
+msgstr ""
+
+msgid "Choose cryptocurrency"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "Clear rate cache"
+msgstr ""
+
+msgid "Coin"
+msgstr ""
+
+msgid "Coin / network"
+msgstr ""
+
+msgid "Coin needs at least one static address to test."
+msgstr ""
+
+msgid "CoinGecko (150+ fiat currencies)"
+msgstr ""
+
+msgid "CoinGecko ID"
+msgstr ""
+
+msgid "CoinMarketCap (API key)"
+msgstr ""
+
+msgid "CoinMarketCap API key"
+msgstr ""
+
+msgid "CoinPaprika"
+msgstr ""
+
+msgid "Coins & Wallets"
+msgstr ""
+
+msgid "Coins, wallets and options are managed under <a href=\"%s\">NovaCrypto Pay → Settings</a>."
+msgstr ""
+
+msgid "Collect refund address"
+msgstr ""
+
+msgid "Complete crypto payment"
+msgstr ""
+
+msgid "Complete payment"
+msgstr ""
+
+msgid "Complete your cryptocurrency payment"
+msgstr ""
+
+msgid "Complete your cryptocurrency payment:"
+msgstr ""
+
+msgid "Complete your payment"
+msgstr ""
+
+msgid "Completed"
+msgstr ""
+
+msgid "Conf"
+msgstr ""
+
+msgid "Conf."
+msgstr ""
+
+msgid "Conf:"
+msgstr ""
+
+msgid "Configuration"
+msgstr ""
+
+msgid "Confirm you have sent the refund on-chain."
+msgstr ""
+
+msgid "Confirmations"
+msgstr ""
+
+msgid "Confirming"
+msgstr ""
+
+msgid "Connect Telegram / Discord / Slack / webhooks"
+msgstr ""
+
+msgid "Context"
+msgstr ""
+
+msgid "Continue"
+msgstr ""
+
+msgid "Continue to payment"
+msgstr ""
+
+msgid "Contract / mint address"
+msgstr ""
+
+msgid "Conversion (30d)"
+msgstr ""
+
+msgid "Copied!"
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Could not create order."
+msgstr ""
+
+msgid "Could not create payment."
+msgstr ""
+
+msgid "Create a bot with @BotFather, then message it once and put your chat ID below."
+msgstr ""
+
+msgid "Create a payment link or invoice"
+msgstr ""
+
+msgid "Created / expires"
+msgstr ""
+
+msgid "Crypto"
+msgstr ""
+
+msgid "Crypto discount (%)"
+msgstr ""
+
+msgid "Crypto discount (%s%%)"
+msgstr ""
+
+msgid "Crypto payment"
+msgstr ""
+
+msgid "Crypto payment %1$s: %2$s received"
+msgstr ""
+
+msgid "Crypto payment UNDERPAID: received %1$s of %2$s %3$s. Waiting for the remainder or manual review."
+msgstr ""
+
+msgid "Crypto payment cancelled."
+msgstr ""
+
+msgid "Crypto payment confirmed: %1$s %2$s"
+msgstr ""
+
+msgid "Crypto payment confirmed: %1$s %2$s."
+msgstr ""
+
+msgid "Crypto payment created: %1$s %2$s to %3$s (rate %4$s, %5$s)."
+msgstr ""
+
+msgid "Crypto payment detected: %1$s %2$s received (%3$d/%4$d confirmations)."
+msgstr ""
+
+msgid "Crypto payment marked refunded."
+msgstr ""
+
+msgid "Crypto payment seen on-chain, awaiting confirmations."
+msgstr ""
+
+msgid "Crypto payment window expired without payment."
+msgstr ""
+
+msgid "Crypto payments (30 days)"
+msgstr ""
+
+msgid "Cryptocurrency"
+msgstr ""
+
+msgid "Custom CSS"
+msgstr ""
+
+msgid "Custom EVM RPC endpoints"
+msgstr ""
+
+msgid "Custom EVM networks"
+msgstr ""
+
+msgid "Custom tokens (ERC-20 / BEP-20 / TRC-20 / SPL)"
+msgstr ""
+
+msgid "Customer"
+msgstr ""
+
+msgid "Customer email"
+msgstr ""
+
+msgid "Customer name"
+msgstr ""
+
+msgid "Customer-submitted txid"
+msgstr ""
+
+msgid "Daily volume (paid, last 30 days)"
+msgstr ""
+
+msgid "Dark"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Debug logging"
+msgstr ""
+
+msgid "Decimals"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete all data on uninstall"
+msgstr ""
+
+msgid "Delete this link?"
+msgstr ""
+
+msgid "Deleted."
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Detection & APIs"
+msgstr ""
+
+msgid "Developer hooks"
+msgstr ""
+
+msgid "Diagnostics"
+msgstr ""
+
+msgid "Disable"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Disabled."
+msgstr ""
+
+msgid "Discord webhook URL"
+msgstr ""
+
+msgid "Displays an approximate miner/gas fee next to each coin."
+msgstr ""
+
+msgid "Donate"
+msgstr ""
+
+msgid "Drops payment tables and settings when the plugin is deleted."
+msgstr ""
+
+msgid "Due by %s"
+msgstr ""
+
+msgid "Due date"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Email admin on paid"
+msgstr ""
+
+msgid "Email admin on underpaid"
+msgstr ""
+
+msgid "Email could not be sent (check your mail configuration)."
+msgstr ""
+
+msgid "Email customer receipt when paid"
+msgstr ""
+
+msgid "Email customer when detected"
+msgstr ""
+
+msgid "Email customer when expired"
+msgstr ""
+
+msgid "Email for receipt"
+msgstr ""
+
+msgid "Email sent."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Enable REST API"
+msgstr ""
+
+msgid "Enable a coin and paste one or more receiving addresses (one per line; rotated between concurrent customers). For Bitcoin, Litecoin, Dogecoin and every EVM chain you can instead paste an account-level extended PUBLIC key (xpub / ypub / zpub / Ltub / dgub) and a fresh address will be derived for every payment — never paste a private key."
+msgstr ""
+
+msgid "Enable coins and paste wallet addresses or an xpub/zpub"
+msgstr ""
+
+msgid "Enable cryptocurrency payments"
+msgstr ""
+
+msgid "Enable payments"
+msgstr ""
+
+msgid "Enable the WooCommerce gateway"
+msgstr ""
+
+msgid "Enable/Disable"
+msgstr ""
+
+msgid "Endpoints under /wp-json/ncp/v1/ (see Tools for the key and examples)."
+msgstr ""
+
+msgid "Est. network fee"
+msgstr ""
+
+msgid "Ethereum & EVM chains"
+msgstr ""
+
+msgid "Etherscan API key (V2, all EVM chains)"
+msgstr ""
+
+msgid "Every minute (NovaCrypto Pay)"
+msgstr ""
+
+msgid "Exchange Rates"
+msgstr ""
+
+msgid "Exchange rate temporarily unavailable. Please try again in a minute."
+msgstr ""
+
+msgid "Exchange rates change quickly, so requests are only valid for a limited time. If you already sent funds they will still be detected. Otherwise please start a new payment."
+msgstr ""
+
+msgid "Expired"
+msgstr ""
+
+msgid "Expires"
+msgstr ""
+
+msgid "Explorer URL"
+msgstr ""
+
+msgid "Export"
+msgstr ""
+
+msgid "Export CSV"
+msgstr ""
+
+msgid "Export payments (CSV, accounting)"
+msgstr ""
+
+msgid "Export settings (JSON)"
+msgstr ""
+
+msgid "Extend window +60 min"
+msgstr ""
+
+msgid "Extended key network (mainnet/testnet) does not match the plugin Test Mode setting."
+msgstr ""
+
+msgid "Extended public key does not encode a valid curve point."
+msgstr ""
+
+msgid "Extended public key is not valid Base58Check (78 bytes expected)."
+msgstr ""
+
+msgid "Fiat"
+msgstr ""
+
+msgid "Filter"
+msgstr ""
+
+msgid "Fixed crypto prices (optional)"
+msgstr ""
+
+msgid "Free key from etherscan.io covers Ethereum, BSC, Polygon, Arbitrum, Optimism, Base, Avalanche… Without it the plugin falls back to Blockscout and then to RPC balance detection (HD addresses only)."
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "From name"
+msgstr ""
+
+msgid "Funds are sent directly to the merchant wallet. No intermediary."
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Get a new quote"
+msgstr ""
+
+msgid "Global markup (%)"
+msgstr ""
+
+msgid "Go back"
+msgstr ""
+
+msgid "HD derivation is not available for this coin; use static addresses. Unique amounts keep concurrent payments distinguishable."
+msgstr ""
+
+msgid "HD gap limit hint"
+msgstr ""
+
+msgid "HD wallet support needs the PHP GMP or BCMath extension."
+msgstr ""
+
+msgid "HD wallet – extended public key (optional, recommended)"
+msgstr ""
+
+msgid "Hello %s,"
+msgstr ""
+
+msgid "Hold: mark Underpaid, ask for the remainder, notify admin (recommended)"
+msgstr ""
+
+msgid "Hosted pay page layout"
+msgstr ""
+
+msgid "How long a quoted amount stays valid. The rate is locked for this window."
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "ID (slug)"
+msgstr ""
+
+msgid "If a customer underpays"
+msgstr ""
+
+msgid "If a refund is ever needed, we will send it to this address."
+msgstr ""
+
+msgid "If set, customers paying with this coin are charged this exact amount instead of the converted fiat price."
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "Import settings"
+msgstr ""
+
+msgid "Informational: most wallets scan 20 unused addresses ahead. Expired payments release their index for reuse automatically, and you can raise the gap limit in your wallet (Electrum, Sparrow, BlueWallet…)."
+msgstr ""
+
+msgid "Inside my theme (header/footer)"
+msgstr ""
+
+msgid "Invalid API key."
+msgstr ""
+
+msgid "Invalid Lightning address."
+msgstr ""
+
+msgid "Invalid request signature."
+msgstr ""
+
+msgid "Invalid settings file."
+msgstr ""
+
+msgid "Invalid: "
+msgstr ""
+
+msgid "Invoice"
+msgstr ""
+
+msgid "Invoice #%1$s for %2$s"
+msgstr ""
+
+msgid "Invoice emailed."
+msgstr ""
+
+msgid "Invoice has no customer email."
+msgstr ""
+
+msgid "Invoice saved and emailed."
+msgstr ""
+
+msgid "Keep an activity log (Tools & Logs). Errors are always logged."
+msgstr ""
+
+msgid "Kraken (USD/EUR/GBP pairs)"
+msgstr ""
+
+msgid "LNbits URL"
+msgstr ""
+
+msgid "LNbits did not return an invoice: "
+msgstr ""
+
+msgid "LNbits invoice/read key"
+msgstr ""
+
+msgid "Last checked"
+msgstr ""
+
+msgid "Leave all unchecked to accept every enabled coin."
+msgstr ""
+
+msgid "Leave all unchecked to offer every enabled coin."
+msgstr ""
+
+msgid "Let customers paste their transaction hash to trigger an immediate check."
+msgstr ""
+
+msgid "Let the payer choose the amount (the amount above becomes the default)"
+msgstr ""
+
+msgid "Level"
+msgstr ""
+
+msgid "Light"
+msgstr ""
+
+msgid "Lightning Network"
+msgstr ""
+
+msgid "Lightning address"
+msgstr ""
+
+msgid "Lightning address did not return an invoice."
+msgstr ""
+
+msgid "Lightning address lookup failed."
+msgstr ""
+
+msgid "Lightning address with LUD-21 verify (e.g. Alby, Wallet of Satoshi does NOT support verify)"
+msgstr ""
+
+msgid "Lightning invoice"
+msgstr ""
+
+msgid "Lightning is not configured."
+msgstr ""
+
+msgid "Lightning uses your LNbits wallet or a Lightning address (with LUD-21 verify, e.g. Alby). Configure the backend under \"Detection & APIs\"."
+msgstr ""
+
+msgid "Link not found."
+msgstr ""
+
+msgid "Links & Invoices"
+msgstr ""
+
+msgid "Loading…"
+msgstr ""
+
+msgid "Logging"
+msgstr ""
+
+msgid "Logo URL"
+msgstr ""
+
+msgid "Logs"
+msgstr ""
+
+msgid "Logs cleared."
+msgstr ""
+
+msgid "Manage payment"
+msgstr ""
+
+msgid "Manual confirmation"
+msgstr ""
+
+msgid "Manual crypto refund of %1$s recorded. Send funds to the customer refund address: %2$s"
+msgstr ""
+
+msgid "Manual fixed rate (fiat per coin)"
+msgstr ""
+
+msgid "Mark as paid"
+msgstr ""
+
+msgid "Mark as paid despite the shortfall?"
+msgstr ""
+
+msgid "Mark refunded"
+msgstr ""
+
+msgid "Mark this payment as PAID manually? This will complete the order."
+msgstr ""
+
+msgid "Markup %"
+msgstr ""
+
+msgid "Master switch for all checkouts, links and shortcodes."
+msgstr ""
+
+msgid "Max uses"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Meta"
+msgstr ""
+
+msgid "Min. order (fiat)"
+msgstr ""
+
+msgid "Min. seconds between explorer calls per payment"
+msgstr ""
+
+msgid "Minimum amount"
+msgstr ""
+
+msgid "Minimum amount for this coin is %1$s %2$s."
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Network"
+msgstr ""
+
+msgid "Never paste a PRIVATE extended key (xprv). Use the public xpub/ypub/zpub only."
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "New donation page"
+msgstr ""
+
+msgid "New invoice"
+msgstr ""
+
+msgid "New payment link"
+msgstr ""
+
+msgid "Next index:"
+msgstr ""
+
+msgid "No compatible browser wallet detected. Please scan the QR code or copy the address."
+msgstr ""
+
+msgid "No crypto payment found for this order."
+msgstr ""
+
+msgid "No crypto payment found."
+msgstr ""
+
+msgid "No links yet."
+msgstr ""
+
+msgid "No log entries."
+msgstr ""
+
+msgid "No paid payments in the last 30 days."
+msgstr ""
+
+msgid "No payment methods available."
+msgstr ""
+
+msgid "No payment record."
+msgstr ""
+
+msgid "No payments yet."
+msgstr ""
+
+msgid "No shop? Use a payment link, invoice or the [ncp_pay] shortcode / block."
+msgstr ""
+
+msgid "No transactions detected yet."
+msgstr ""
+
+msgid "No wallet address configured for this coin."
+msgstr ""
+
+msgid "Not a crypto order."
+msgstr ""
+
+msgid "Not found."
+msgstr ""
+
+msgid "Note added."
+msgstr ""
+
+msgid "Nothing yet."
+msgstr ""
+
+msgid "Notifications"
+msgstr ""
+
+msgid "NovaCrypto Pay"
+msgstr ""
+
+msgid "NovaCrypto Pay (Cryptocurrency)"
+msgstr ""
+
+msgid "NovaCrypto Pay Settings"
+msgstr ""
+
+msgid "NovaCrypto Pay is in TEST MODE (testnets). Disable it in Settings → General before going live."
+msgstr ""
+
+msgid "NovaCrypto Pay test notification."
+msgstr ""
+
+msgid "NovaCrypto Pay: no coins are enabled. Add a wallet under NovaCrypto Pay → Coins & Wallets."
+msgstr ""
+
+msgid "NovaCrypto Pay: the PHP GMP or BCMath extension is missing, so HD wallet (xpub) address generation is disabled. Static addresses still work."
+msgstr ""
+
+msgid "Offer at checkout only:"
+msgstr ""
+
+msgid "One address per line"
+msgstr ""
+
+msgid "Open NovaCrypto settings"
+msgstr ""
+
+msgid "Open in dashboard"
+msgstr ""
+
+msgid "Open in wallet app"
+msgstr ""
+
+msgid "Open order"
+msgstr ""
+
+msgid "Open payment page"
+msgstr ""
+
+msgid "Order #%s"
+msgstr ""
+
+msgid "Order status after payment"
+msgstr ""
+
+msgid "Outgoing webhooks (IPN)"
+msgstr ""
+
+msgid "Overrides the built-in public RPC for fee estimates, MetaMask network switching and balance detection."
+msgstr ""
+
+msgid "Paid"
+msgstr ""
+
+msgid "Paid at"
+msgstr ""
+
+msgid "Paid only"
+msgstr ""
+
+msgid "Pay invoice"
+msgstr ""
+
+msgid "Pay page"
+msgstr ""
+
+msgid "Pay with"
+msgstr ""
+
+msgid "Pay with Bitcoin, Ethereum, Lightning, stablecoins and more. Funds go directly to the merchant wallet."
+msgstr ""
+
+msgid "Pay with browser wallet (MetaMask etc.)"
+msgstr ""
+
+msgid "Pay with crypto"
+msgstr ""
+
+msgid "Pay with crypto and get %s%% off."
+msgstr ""
+
+msgid "Payment"
+msgstr ""
+
+msgid "Payment #%d"
+msgstr ""
+
+msgid "Payment Links & Invoices"
+msgstr ""
+
+msgid "Payment cancelled."
+msgstr ""
+
+msgid "Payment check run complete."
+msgstr ""
+
+msgid "Payment confirmed – thank you!"
+msgstr ""
+
+msgid "Payment detected"
+msgstr ""
+
+msgid "Payment link"
+msgstr ""
+
+msgid "Payment link not found."
+msgstr ""
+
+msgid "Payment links are reusable, shareable checkout pages. Invoices are one-time and can be emailed to a customer. Donation pages let visitors choose their own amount. All work without WooCommerce."
+msgstr ""
+
+msgid "Payment marked as paid."
+msgstr ""
+
+msgid "Payment marked refunded."
+msgstr ""
+
+msgid "Payment method description"
+msgstr ""
+
+msgid "Payment method title"
+msgstr ""
+
+msgid "Payment not found."
+msgstr ""
+
+msgid "Payment re-quoted at the current rate."
+msgstr ""
+
+msgid "Payment received. Thank you!"
+msgstr ""
+
+msgid "Payment window (minutes)"
+msgstr ""
+
+msgid "Payment window extended by 60 minutes."
+msgstr ""
+
+msgid "Payments"
+msgstr ""
+
+msgid "Payments within this percentage below the amount due are accepted as paid (covers exchange withdrawal fees / rounding)."
+msgstr ""
+
+msgid "Pending now"
+msgstr ""
+
+msgid "Per-coin overrides"
+msgstr ""
+
+msgid "Permission denied."
+msgstr ""
+
+msgid "Please choose a cryptocurrency."
+msgstr ""
+
+msgid "Please choose which cryptocurrency you want to pay with."
+msgstr ""
+
+msgid "Please enter a valid amount."
+msgstr ""
+
+msgid "Please enter a valid email address."
+msgstr ""
+
+msgid "Positive = charge more crypto (covers volatility / fees). Negative = discount."
+msgstr ""
+
+msgid "Preview addresses"
+msgstr ""
+
+msgid "Primary colour"
+msgstr ""
+
+msgid "Primary provider"
+msgstr ""
+
+msgid "Processing (default)"
+msgstr ""
+
+msgid "Protects you from API rate limits."
+msgstr ""
+
+msgid "Providers are tried in order until one returns a price; if all fail, the last known rate (up to 24h old) is used so checkout never breaks."
+msgstr ""
+
+msgid "Public RPC works for low volume; use Helius/QuickNode/Alchemy for production."
+msgstr ""
+
+msgid "Quick start"
+msgstr ""
+
+msgid "REST API & Webhooks"
+msgstr ""
+
+msgid "RPC URL"
+msgstr ""
+
+msgid "RPC URL (Infura/Alchemy/own node)"
+msgstr ""
+
+msgid "Raises rate limits for Dogecoin / Bitcoin Cash / Litecoin fallback detection."
+msgstr ""
+
+msgid "Rate"
+msgstr ""
+
+msgid "Rate cache cleared."
+msgstr ""
+
+msgid "Rate providers"
+msgstr ""
+
+msgid "Rate snapshot"
+msgstr ""
+
+msgid "Re-quote at current rate"
+msgstr ""
+
+msgid "Recalculate the crypto amount at the current exchange rate?"
+msgstr ""
+
+msgid "Received"
+msgstr ""
+
+msgid "Received (30d)"
+msgstr ""
+
+msgid "Received:"
+msgstr ""
+
+msgid "Recent payments"
+msgstr ""
+
+msgid "Reference"
+msgstr ""
+
+msgid "Refund address"
+msgstr ""
+
+msgid "Refund address (optional)"
+msgstr ""
+
+msgid "Refund address:"
+msgstr ""
+
+msgid "Refunded"
+msgstr ""
+
+msgid "Regenerate on save"
+msgstr ""
+
+msgid "Remaining amount to send"
+msgstr ""
+
+msgid "Remember to enable the \"Bitcoin Lightning\" coin on the Coins & Wallets tab."
+msgstr ""
+
+msgid "Require email"
+msgstr ""
+
+msgid "Required confirmations"
+msgstr ""
+
+msgid "Resend customer email"
+msgstr ""
+
+msgid "Reward customers who pay with crypto. Applied as a negative fee in WooCommerce and as a reduced total on links/invoices."
+msgstr ""
+
+msgid "Run payment check now"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Save & email invoice"
+msgstr ""
+
+msgid "Saved."
+msgstr ""
+
+msgid "Search uuid / address / email / order"
+msgstr ""
+
+msgid "Seen"
+msgstr ""
+
+msgid "Send exactly this amount. Network fees are paid by you on top."
+msgstr ""
+
+msgid "Send test notifications"
+msgstr ""
+
+msgid "Send test to all channels"
+msgstr ""
+
+msgid "Session expired, please reload the page."
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Settings imported."
+msgstr ""
+
+msgid "Settings saved with warnings: "
+msgstr ""
+
+msgid "Settings saved."
+msgstr ""
+
+msgid "Shortcodes:"
+msgstr ""
+
+msgid "Show an optional refund-address field on the payment page."
+msgstr ""
+
+msgid "Show coin icons next to the title"
+msgstr ""
+
+msgid "Show network fee estimate"
+msgstr ""
+
+msgid "Shown at checkout."
+msgstr ""
+
+msgid "Shown on hosted pay pages, invoices and emails."
+msgstr ""
+
+msgid "Signed JSON POSTs on payment.created / detected / confirming / paid / underpaid / expired / cancelled / refunded with automatic retries. Signature header X-NCP-Signature = sha256 HMAC of the raw body using the secret shown under Tools."
+msgstr ""
+
+msgid "Slack incoming webhook URL"
+msgstr ""
+
+msgid "Solana"
+msgstr ""
+
+msgid "Solana RPC URL"
+msgstr ""
+
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "Source: %1$s #%2$s · Customer: %3$s"
+msgstr ""
+
+msgid "Stablecoin"
+msgstr ""
+
+msgid "Standalone minimal page"
+msgstr ""
+
+msgid "Start on the \"Coins & Wallets\" tab: enable a coin and paste your wallet address (or an xpub/zpub for fresh addresses per order)."
+msgstr ""
+
+msgid "Static address(es)"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Status must be paid, cancelled, refunded or pending."
+msgstr ""
+
+msgid "Status updated."
+msgstr ""
+
+msgid "Store currency (standalone mode)"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Success URL"
+msgstr ""
+
+msgid "Support us with crypto"
+msgstr ""
+
+msgid "Symbol"
+msgstr ""
+
+msgid "System check"
+msgstr ""
+
+msgid "TESTNET"
+msgstr ""
+
+msgid "Telegram bot token"
+msgstr ""
+
+msgid "Telegram chat ID"
+msgstr ""
+
+msgid "Test Lightning"
+msgstr ""
+
+msgid "Test blockchain detection for:"
+msgstr ""
+
+msgid "Test exchange rates"
+msgstr ""
+
+msgid "Test mode"
+msgstr ""
+
+msgid "That coin is not accepted for this link."
+msgstr ""
+
+msgid "That does not look like a valid transaction hash for this network."
+msgstr ""
+
+msgid "The wallet rejected the request."
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+msgid "This Lightning address provider does not support payment verification (LUD-21). Use LNbits instead."
+msgstr ""
+
+msgid "This cryptocurrency is not available."
+msgstr ""
+
+msgid "This invoice has been paid."
+msgstr ""
+
+msgid "This invoice is already paid."
+msgstr ""
+
+msgid "This overwrites all current settings and wallets. Continue?"
+msgstr ""
+
+msgid "This payment link has already been used."
+msgstr ""
+
+msgid "This payment link has expired."
+msgstr ""
+
+msgid "This payment link is no longer active."
+msgstr ""
+
+msgid "This payment request has expired."
+msgstr ""
+
+msgid "Time (UTC)"
+msgstr ""
+
+msgid "Time left"
+msgstr ""
+
+msgid "Tip: for reliable background checks, add a real cron job hitting wp-cron.php every minute and set DISABLE_WP_CRON."
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "To this address"
+msgstr ""
+
+msgid "Too many requests."
+msgstr ""
+
+msgid "Tools & Logs"
+msgstr ""
+
+msgid "Transaction hash (optional)"
+msgstr ""
+
+msgid "Transaction hash / ID"
+msgstr ""
+
+msgid "Transactions"
+msgstr ""
+
+msgid "Treat unconfirmed (mempool) transactions as paid. Faster, but carries double-spend risk. Overrides per-coin confirmations."
+msgstr ""
+
+msgid "Tron"
+msgstr ""
+
+msgid "TronGrid API key (optional)"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "Underpaid"
+msgstr ""
+
+msgid "Underpayment accepted; payment marked paid."
+msgstr ""
+
+msgid "Underpayment tolerance (%)"
+msgstr ""
+
+msgid "Unique amounts"
+msgstr ""
+
+msgid "Unknown action."
+msgstr ""
+
+msgid "Unknown coin."
+msgstr ""
+
+msgid "Unsupported extended key version. Use xpub, ypub, zpub, tpub, Ltub, Mtub or dgub (never a private xprv)."
+msgstr ""
+
+msgid "Use testnets (Bitcoin testnet3, Sepolia, BSC testnet, Amoy, Nile, Solana devnet…). Stablecoin presets are hidden in test mode; add test tokens as custom tokens."
+msgstr ""
+
+msgid "Use the INVOICE key (read-only), never the admin key."
+msgstr ""
+
+msgid "Used for payment links, invoices and shortcodes. WooCommerce / EDD use their own currency setting. 150+ fiat currencies supported via CoinGecko."
+msgstr ""
+
+msgid "Uses"
+msgstr ""
+
+msgid "Validated with checksum on save."
+msgstr ""
+
+msgid "Verbose explorer / webhook traces."
+msgstr ""
+
+msgid "View address on explorer"
+msgstr ""
+
+msgid "View all"
+msgstr ""
+
+msgid "View all payments →"
+msgstr ""
+
+msgid "View payment status"
+msgstr ""
+
+msgid "WP-CLI"
+msgstr ""
+
+msgid "Waiting for payment… this page updates automatically."
+msgstr ""
+
+msgid "Wallet buttons"
+msgstr ""
+
+msgid "We accept cryptocurrency"
+msgstr ""
+
+msgid "We did not detect a payment within the allowed time. If you already sent funds, they will still be matched automatically. Otherwise you can start a new payment from your order."
+msgstr ""
+
+msgid "We have detected your payment"
+msgstr ""
+
+msgid "We received %1$s but %2$s was due. Please send the remaining %3$s to the same address to complete your order."
+msgstr ""
+
+msgid "Webhook header: X-NCP-Signature: sha256=HMAC_SHA256(body, secret)"
+msgstr ""
+
+msgid "Webhook secret"
+msgstr ""
+
+msgid "Webhook signing secret"
+msgstr ""
+
+msgid "Welcome to NovaCrypto Pay!"
+msgstr ""
+
+msgid "When several customers share one static address, add a tiny random amount so each payment can be matched unambiguously. (Not needed when using an xpub / HD wallet.)"
+msgstr ""
+
+msgid "Where to send the payer after a confirmed payment (optional)."
+msgstr ""
+
+msgid "You have a new invoice"
+msgstr ""
+
+msgid "You have a new invoice payable in cryptocurrency."
+msgstr ""
+
+msgid "Your cryptocurrency payment has been confirmed. Keep this email as your receipt."
+msgstr ""
+
+msgid "Your cryptocurrency payment has been confirmed. Thank you!"
+msgstr ""
+
+msgid "Your payment was less than the amount due"
+msgstr ""
+
+msgid "Your payment window has expired"
+msgstr ""
+
+msgid "Your previous payment request expired."
+msgstr ""
+
+msgid "Your transaction has been seen on the network and is waiting for confirmations. We will email you again once it is fully confirmed."
+msgstr ""
+
+msgid "Zero-confirmation"
+msgstr ""
+
+msgid "[%1$s] Crypto payment %2$s: %3$s %4$s"
+msgstr ""
+
+msgid "address"
+msgstr ""
+
+msgid "auto"
+msgstr ""
+
+msgid "awaiting funds / confirmations"
+msgstr ""
+
+msgid "custom"
+msgstr ""
+
+msgid "data"
+msgstr ""
+
+msgid "donation page"
+msgstr ""
+
+msgid "expired"
+msgstr ""
+
+msgid "explorer"
+msgstr ""
+
+msgid "invoice"
+msgstr ""
+
+msgid "need review"
+msgstr ""
+
+msgid "paid payments"
+msgstr ""
+
+msgid "payment link"
+msgstr ""
+
+msgid "payments"
+msgstr ""
+
+msgid "pending"
+msgstr ""
+
+msgid "received in"
+msgstr ""
+
+msgid "recv"
+msgstr ""
+

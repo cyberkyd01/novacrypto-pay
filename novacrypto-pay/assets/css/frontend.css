@@ -1,0 +1,92 @@
+/* NovaCrypto Pay – frontend */
+.ncp-box{--ncp-bg:#ffffff;--ncp-fg:#111827;--ncp-muted:#6b7280;--ncp-border:#e5e7eb;--ncp-soft:#f3f4f6;--ncp-code:#f9fafb;
+	background:var(--ncp-bg);color:var(--ncp-fg);border:1px solid var(--ncp-border);border-radius:var(--ncp-radius,12px);padding:24px;max-width:720px;margin:0 auto 24px;box-sizing:border-box;font-size:15px;line-height:1.5;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.ncp-box *{box-sizing:border-box}
+.ncp-theme-dark.ncp-box,.ncp-theme-dark .ncp-box{--ncp-bg:#111827;--ncp-fg:#f9fafb;--ncp-muted:#9ca3af;--ncp-border:#374151;--ncp-soft:#1f2937;--ncp-code:#1f2937}
+@media (prefers-color-scheme:dark){.ncp-theme-auto.ncp-box,.ncp-theme-auto .ncp-box{--ncp-bg:#111827;--ncp-fg:#f9fafb;--ncp-muted:#9ca3af;--ncp-border:#374151;--ncp-soft:#1f2937;--ncp-code:#1f2937}}
+.ncp-box-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:12px;flex-wrap:wrap}
+.ncp-box-heading{flex:1;min-width:0}
+.ncp-logo{max-height:40px;max-width:160px}
+.ncp-title{margin:0 0 4px;font-size:20px;font-weight:700;line-height:1.3}
+.ncp-fiat{font-size:22px;font-weight:700}
+.ncp-discount-tag{display:inline-block;font-size:12px;font-weight:600;background:rgba(22,163,74,.12);color:var(--ncp-accent,#16a34a);padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
+.ncp-badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap;background:var(--ncp-soft);color:var(--ncp-muted)}
+.ncp-badge-pending{background:rgba(37,99,235,.12);color:var(--ncp-primary,#2563eb)}
+.ncp-badge-detected,.ncp-badge-confirming{background:rgba(217,119,6,.14);color:#b45309}
+.ncp-badge-paid{background:rgba(22,163,74,.14);color:#15803d}
+.ncp-badge-underpaid,.ncp-badge-expired{background:rgba(220,38,38,.12);color:#b91c1c}
+.ncp-badge-cancelled,.ncp-badge-refunded{background:var(--ncp-soft);color:var(--ncp-muted)}
+.ncp-coin-line{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:14px}
+.ncp-coin-icon{width:22px;height:22px;border-radius:50%}
+.ncp-network{color:var(--ncp-muted);font-size:13px}
+.ncp-testnet{font-size:11px;font-weight:700;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px}
+.ncp-body{display:grid;grid-template-columns:200px 1fr;gap:24px}
+@media (max-width:600px){.ncp-body{grid-template-columns:1fr}.ncp-qr-col{text-align:center}}
+.ncp-qr{background:#fff;padding:8px;border-radius:8px;border:1px solid var(--ncp-border);display:inline-block;line-height:0}
+.ncp-qr canvas,.ncp-qr img{max-width:100%;height:auto}
+.ncp-qr-small{padding:4px}
+.ncp-explorer-link{display:block;margin-top:8px;font-size:13px;color:var(--ncp-primary,#2563eb);text-decoration:none}
+.ncp-label{display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--ncp-muted);margin:12px 0 6px}
+.ncp-label:first-child{margin-top:0}
+.ncp-copy-row{display:flex;gap:8px;align-items:stretch}
+.ncp-copy-row code{flex:1;min-width:0;display:block;padding:10px 12px;background:var(--ncp-code);border:1px solid var(--ncp-border);border-radius:8px;font-size:14px;word-break:break-all;color:var(--ncp-fg);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.ncp-amount{font-weight:700;font-size:16px!important}
+.ncp-copy{flex-shrink:0;border:1px solid var(--ncp-border);background:var(--ncp-soft);color:var(--ncp-fg);border-radius:8px;padding:0 14px;cursor:pointer;font-size:13px;font-weight:600}
+.ncp-copy:hover{border-color:var(--ncp-primary,#2563eb)}
+.ncp-copy.is-copied{background:var(--ncp-accent,#16a34a);color:#fff;border-color:transparent}
+.ncp-hint{font-size:13px;color:var(--ncp-muted);margin:6px 0 0}
+.ncp-wallet-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.ncp-btn{display:inline-block;padding:11px 18px;border-radius:8px;border:0;background:var(--ncp-primary,#2563eb);color:#fff!important;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none!important;line-height:1.2;text-align:center}
+.ncp-btn:hover{filter:brightness(1.08)}
+.ncp-btn-primary{width:100%;padding:14px;font-size:16px;margin-top:16px}
+.ncp-btn-secondary{background:var(--ncp-soft);color:var(--ncp-fg)!important;border:1px solid var(--ncp-border)}
+.ncp-btn-wallet{background:#f6851b}
+.ncp-btn[disabled]{opacity:.6;cursor:wait}
+.ncp-meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px;font-size:13px}
+.ncp-meta-grid>div{background:var(--ncp-soft);border-radius:8px;padding:8px 10px}
+.ncp-meta-grid span{display:block;color:var(--ncp-muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+.ncp-progress{margin-top:20px;position:relative;height:auto;background:var(--ncp-soft);border-radius:8px;padding:10px 12px;overflow:hidden;font-size:13px;color:var(--ncp-muted)}
+.ncp-progress-bar{position:absolute;left:0;top:0;bottom:0;width:30%;background:linear-gradient(90deg,transparent,rgba(37,99,235,.15),transparent);animation:ncp-slide 1.8s infinite linear}
+.ncp-status-paid .ncp-progress,.ncp-status-expired .ncp-progress{display:none}
+@keyframes ncp-slide{from{left:-30%}to{left:100%}}
+.ncp-progress-text{position:relative}
+.ncp-txs{margin-top:12px;font-size:13px}
+.ncp-tx{padding:6px 0;border-top:1px dashed var(--ncp-border);word-break:break-all}
+.ncp-tx a{color:var(--ncp-primary,#2563eb)}
+.ncp-extra{margin-top:12px;border-top:1px solid var(--ncp-border);padding-top:10px;font-size:14px}
+.ncp-extra summary{cursor:pointer;color:var(--ncp-muted);font-weight:600}
+.ncp-inline-form{display:flex;gap:8px;margin-top:10px}
+.ncp-inline-form input{flex:1;min-width:0}
+.ncp-box input[type=text],.ncp-box input[type=email],.ncp-box input[type=number]{width:100%;padding:11px 12px;border:1px solid var(--ncp-border);border-radius:8px;background:var(--ncp-bg);color:var(--ncp-fg);font-size:15px}
+.ncp-box input:focus{outline:2px solid var(--ncp-primary,#2563eb);outline-offset:1px;border-color:transparent}
+.ncp-form-msg{font-size:13px;margin:8px 0 0;min-height:1em}
+.ncp-form-msg.is-error{color:#b91c1c}
+.ncp-form-msg.is-ok{color:#15803d}
+.ncp-final{text-align:center;padding:24px 8px}
+.ncp-final-icon{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;color:#fff}
+.ncp-final-ok{background:var(--ncp-accent,#16a34a)}
+.ncp-final-warn{background:#d97706}
+.ncp-final h4{margin:0 0 8px;font-size:18px}
+.ncp-final p{color:var(--ncp-muted);margin:0 0 12px}
+.ncp-powered{margin:16px 0 0;font-size:12px;color:var(--ncp-muted);text-align:center}
+.ncp-notice{padding:12px 16px;border-radius:8px;background:#fef2f2;color:#991b1b;border:1px solid #fecaca;max-width:720px;margin:0 auto 16px}
+/* coin picker */
+.ncp-coin-picker{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.ncp-coin-option{display:grid;grid-template-columns:24px 1fr;grid-template-rows:auto auto;column-gap:10px;align-items:center;border:1px solid var(--ncp-border);border-radius:8px;padding:10px 12px;cursor:pointer;background:var(--ncp-bg);position:relative;margin:0}
+.ncp-coin-option input{position:absolute;opacity:0;pointer-events:none}
+.ncp-coin-option.is-selected{border-color:var(--ncp-primary,#2563eb);box-shadow:0 0 0 2px rgba(37,99,235,.2)}
+.ncp-coin-option .ncp-coin-icon{grid-row:span 2}
+.ncp-coin-name{font-weight:600;font-size:14px}
+.ncp-coin-net{font-size:12px;color:var(--ncp-muted)}
+.ncp-coin-quote{grid-column:2;font-size:12px;color:var(--ncp-muted);margin-top:2px;font-family:ui-monospace,Menlo,monospace}
+.ncp-presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.ncp-preset{border:1px solid var(--ncp-border);background:var(--ncp-soft);color:var(--ncp-fg);border-radius:8px;padding:8px 14px;cursor:pointer;font-weight:600}
+.ncp-preset.is-selected{border-color:var(--ncp-primary,#2563eb);background:rgba(37,99,235,.1)}
+.ncp-wallet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.ncp-wallet-item{border:1px solid var(--ncp-border);border-radius:8px;padding:14px}
+.ncp-wallet-item .ncp-qr{margin-bottom:8px}
+.ncp-description{margin-bottom:16px;color:var(--ncp-muted)}
+.ncp-page-wrap{max-width:760px;margin:32px auto;padding:0 16px}
+/* WooCommerce checkout */
+.payment_method_novacrypto .ncp-coin-picker{margin-top:8px}
+.wc-block-components-radio-control .ncp-coin-picker{margin-top:8px}
