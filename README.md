@@ -2,9 +2,13 @@
 
 A non-custodial cryptocurrency payment plugin for WordPress, WooCommerce and Easy Digital Downloads. Built as a feature-superset of the CodeCanyon "Cryptoniq" plugin — see [FEATURE-COMPARISON.md](FEATURE-COMPARISON.md).
 
+## Download
+
+**[Download novacrypto-pay.zip (latest release)](https://github.com/cyberkyd01/novacrypto-pay/releases/latest/download/novacrypto-pay.zip)** – ready to upload to WordPress.
+
 ## Install
 
-1. Zip the `novacrypto-pay/` folder (or use `novacrypto-pay.zip`) and upload it under **Plugins → Add New → Upload**, or copy the folder to `wp-content/plugins/`.
+1. Download the zip above and upload it under **Plugins → Add New → Upload Plugin**, or copy the `novacrypto-pay/` folder to `wp-content/plugins/`.
 2. Activate. You are redirected to **NovaCrypto Pay → Settings**.
 3. **Coins & Wallets**: tick a coin and paste a wallet address (one per line) or an account-level extended public key (`zpub…` for native-SegWit Bitcoin, `xpub…` for Ethereum accounts, `Ltub…`/`xpub…` for Litecoin, `dgub…` for Dogecoin). Use *Preview addresses* to confirm they match your wallet.
 4. Optional but recommended: **Detection & APIs → Etherscan API key** (free) for EVM chains. Without it the plugin uses JSON-RPC log detection for tokens and balance detection for HD addresses.
