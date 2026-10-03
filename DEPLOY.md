@@ -118,10 +118,12 @@ Additive only: nothing is upgraded or removed.
 
 ```bash
 sudo bash -euo pipefail <<'EOF'
+export DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1   # additive only: needrestart must not restart other services
 source /etc/novacrypto/deploy.conf
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get install -y --no-install-recommends ca-certificates curl git rsync openssl
+MISSING_PKGS=""; for p in ca-certificates curl git rsync openssl; do dpkg-query -W -f='${Status}' "$p" 2>/dev/null | grep -q 'ok installed' || MISSING_PKGS="$MISSING_PKGS $p"; done
+if [ -n "$MISSING_PKGS" ]; then apt-get install -y --no-install-recommends $MISSING_PKGS; fi   # only what's missing - never upgrades installed packages
 echo "Packages OK"
 EOF
 ```
@@ -252,6 +254,7 @@ This adds what's missing among `php<ver>-gmp`, `php<ver>-bcmath`, `php<ver>-curl
 
 ```bash
 sudo bash -euo pipefail <<'EOF'
+export DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1   # additive only: needrestart must not restart other services
 source /etc/novacrypto/deploy.conf
 CONF=/etc/novacrypto/deploy.conf
 setconf() { if grep -q "^$1=" "$CONF"; then sed -i "s|^$1=.*|$1=$2|" "$CONF"; else echo "$1=$2" >> "$CONF"; fi; }
@@ -268,7 +271,8 @@ else MODS=""; fi
 for ext in gmp bcmath curl; do echo "$MODS" | grep -qix "$ext" || NEED+=("php$PHPV-$ext"); done
 if [ ${#NEED[@]} -gt 0 ]; then
   echo "Installing: ${NEED[*]}"
-  apt-get install -y --no-install-recommends "${NEED[@]}"
+  MISSING_PKGS=""; for p in "${NEED[@]}"; do dpkg-query -W -f='${Status}' "$p" 2>/dev/null | grep -q 'ok installed' || MISSING_PKGS="$MISSING_PKGS $p"; done
+  if [ -n "$MISSING_PKGS" ]; then apt-get install -y --no-install-recommends $MISSING_PKGS; fi   # only what's missing - never upgrades installed packages
   if systemctl is-active --quiet "php$PHPV-fpm" 2>/dev/null; then
     "/usr/sbin/php-fpm$PHPV" -t && systemctl reload "php$PHPV-fpm" && echo "Reloaded php$PHPV-fpm (graceful: no requests dropped)"
   elif [ -e "/etc/apache2/mods-enabled/php$PHPV.load" ]; then
@@ -297,6 +301,7 @@ This reuses the newest PHP-FPM already installed, or installs the distro's (`php
 
 ```bash
 sudo bash -euo pipefail <<'EOF'
+export DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1   # additive only: needrestart must not restart other services
 source /etc/novacrypto/deploy.conf
 CONF=/etc/novacrypto/deploy.conf
 setconf() { if grep -q "^$1=" "$CONF"; then sed -i "s|^$1=.*|$1=$2|" "$CONF"; else echo "$1=$2" >> "$CONF"; fi; }
@@ -306,13 +311,15 @@ apt-get update
 V=$(ls -d /etc/php/*/fpm 2>/dev/null | cut -d/ -f4 | sort -V | tail -1 || true)
 if [ -z "$V" ]; then apt-get install -y --no-install-recommends php-fpm; V=$(ls -d /etc/php/*/fpm | cut -d/ -f4 | sort -V | tail -1); fi
 [ "$(printf '%s\n' 7.4 "$V" | sort -V | head -1)" = 7.4 ] || { echo "STOP: PHP $V is too old (WordPress needs 7.4+)"; exit 1; }
-apt-get install -y --no-install-recommends "php$V-fpm" "php$V-cli" "php$V-mysql" "php$V-curl" "php$V-gd" "php$V-mbstring" "php$V-xml" "php$V-zip" "php$V-intl" "php$V-gmp" "php$V-bcmath"
+MISSING_PKGS=""; for p in "php$V-fpm" "php$V-cli" "php$V-mysql" "php$V-curl" "php$V-gd" "php$V-mbstring" "php$V-xml" "php$V-zip" "php$V-intl" "php$V-gmp" "php$V-bcmath"; do dpkg-query -W -f='${Status}' "$p" 2>/dev/null | grep -q 'ok installed' || MISSING_PKGS="$MISSING_PKGS $p"; done
+if [ -n "$MISSING_PKGS" ]; then apt-get install -y --no-install-recommends $MISSING_PKGS; fi   # only what's missing - never upgrades installed packages
 if systemctl is-active --quiet mariadb 2>/dev/null || systemctl is-active --quiet mysql 2>/dev/null; then
   echo "Using the MySQL/MariaDB server that is already running"
 elif dpkg -l 2>/dev/null | grep -qE '^ii +(mariadb-server|mysql-server)'; then
   echo "STOP: a MySQL/MariaDB server is installed but not running. Start it, then run this again"; exit 1
 else
-  apt-get install -y --no-install-recommends mariadb-server
+  MISSING_PKGS=""; for p in mariadb-server; do dpkg-query -W -f='${Status}' "$p" 2>/dev/null | grep -q 'ok installed' || MISSING_PKGS="$MISSING_PKGS $p"; done
+  if [ -n "$MISSING_PKGS" ]; then apt-get install -y --no-install-recommends $MISSING_PKGS; fi   # only what's missing - never upgrades installed packages
 fi
 setconf PHPV "$V"
 setconf WP_USER "$APP_USER"
@@ -430,6 +437,7 @@ This adds only `/etc/nginx/sites-available/novacrypto` (or `/etc/nginx/conf.d/no
 
 ```bash
 sudo bash -euo pipefail <<'EOF'
+export DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1   # additive only: needrestart must not restart other services
 source /etc/novacrypto/deploy.conf
 [ "$MODE" = fresh ] || { echo "MODE=$MODE: Path B does not apply"; exit 0; }
 WEB=$(ss -ltnpH '( sport = :80 or sport = :443 )' | grep -o 'users:(("[^"]*' | cut -d'"' -f2 | sort -u | tr '\n' ' ')
@@ -479,6 +487,7 @@ EOF
 
 ```bash
 sudo bash -euo pipefail <<'EOF'
+export DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1   # additive only: needrestart must not restart other services
 source /etc/novacrypto/deploy.conf
 [ "$MODE" = fresh ] && [ -n "$DOMAIN" ] || { echo "No domain set: skipping HTTPS (site is on http://<server-ip>:$PUBLIC_PORT)"; exit 0; }
 IP=$(curl -4fsS --max-time 10 https://api.ipify.org)
@@ -788,7 +797,7 @@ W cache flush
 EOF
 ```
 
-`wp db export` / `import` need the `mysqldump` / `mysql` client. If they're missing (database on another host), install them with `sudo apt-get install -y --no-install-recommends default-mysql-client`.
+`wp db export` / `import` need the `mysqldump` / `mysql` client. If they're missing (database on another host), install them with `sudo env DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1 apt-get install -y --no-install-recommends default-mysql-client`.
 
 ## Troubleshooting
 
