@@ -76,3 +76,11 @@ novacrypto-pay/
 * Public explorer/RPC endpoints have rate limits. For high volume add API keys (Etherscan, BlockCypher, TronGrid) or your own RPC URLs.
 * Lightning via a Lightning address requires a provider that supports LUD-21 `verify` (e.g. Alby). LNbits works with any node.
 * Solana addresses cannot be derived from an xpub (ed25519); use static addresses — unique salted amounts keep concurrent payments distinguishable.
+
+---
+
+## ⭐ Support
+
+Please give stars and if possible Buy me a coffee (USDT-TRC20) - `TA216k3WgWTrKnUKxZrSDNGzSJj3eHtEcH`
+
+Telegram: [@Cyberkyd](https://t.me/Cyberkyd)
